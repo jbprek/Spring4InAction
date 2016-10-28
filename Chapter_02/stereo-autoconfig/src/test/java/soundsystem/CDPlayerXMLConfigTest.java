@@ -31,9 +31,12 @@ public class CDPlayerXMLConfigTest {
   @Test
   public void play() {
     player.play();
+    String logged = log.getLog();
+    logged = logged.replaceAll("[\n\r]", "");
     assertEquals(
-        "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n", 
-        log.getLog());
+            "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles",
+            logged);
+
   }
 
 }
