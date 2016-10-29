@@ -33,7 +33,6 @@ proguard/
 .gradletasknamecache
 .gradle/
 build/
-bin/
 
 #maven
 target/
