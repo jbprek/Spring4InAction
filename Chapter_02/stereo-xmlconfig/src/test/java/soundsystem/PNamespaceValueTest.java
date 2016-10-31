@@ -24,7 +24,7 @@ public class PNamespaceValueTest {
   public void play() {
     player.play();
     assertEquals(
-        "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n" +
+        "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles" +
         "-Track: Sgt. Pepper's Lonely Hearts Club Band\n" +
         "-Track: With a Little Help from My Friends\n" +
         "-Track: Lucy in the Sky with Diamonds\n" +

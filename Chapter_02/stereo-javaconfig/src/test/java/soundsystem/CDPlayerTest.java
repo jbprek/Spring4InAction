@@ -22,10 +22,12 @@ public class CDPlayerTest {
 
   @Test
   public void play() {
-    player.play();
+      player.play();
+
+      String logged = log.getLog().replaceAll("[\n\r]", "");
     assertEquals(
-        "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n", 
-        log.getLog());
+        "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles",
+        logged);
   }
 
 }
