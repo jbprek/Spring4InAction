@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>sia4</groupId>
+    <artifactId>parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <description>Spring In Action 4th Edition Maven</description>
+
+    <properties>
+        <activeMQVersion>5.7.0</activeMQVersion>
+        <aspectJVersion>1.7.2</aspectJVersion>
+        <commonsLangVersion>3.1</commonsLangVersion>
+        <ehcacheVersion>2.7.4</ehcacheVersion>
+        <ehcacheJCacheVersion>1.4.0-beta1</ehcacheJCacheVersion>
+        <mcrestVersion>1.3</mcrestVersion>
+        <hibernateVersion>4.1.6.Final</hibernateVersion>
+        <hibernateEntityManagerVersion>4.0.1.Final</hibernateEntityManagerVersion>
+        <hibernateValidatorVersion>5.0.1.Final</hibernateValidatorVersion>
+        <jacksonVersion>2.4.3</jacksonVersion>
+        <javaxMailVersion>1.4.7</javaxMailVersion>
+        <jspApiVersion>2.1</jspApiVersion>
+        <jspElVersion>2.2.4</jspElVersion>
+        <stlVersion>1.2</stlVersion>
+        <junitVersion>4.11</junitVersion>
+        <log4jVersion>1.2.14</log4jVersion>
+        <mockitoVersion>1.9.5</mockitoVersion>
+        <servletApiVersion>3.1.0</servletApiVersion>
+        <slf4jVersion>1.7.5</slf4jVersion>
+        <springAMQPVersion>1.0.0.RELEASE</springAMQPVersion>
+        <springDataJpaVersion>1.3.2.RELEASE</springDataJpaVersion>
+        <springSecurityVersion>3.2.0.RELEASE</springSecurityVersion>
+        <springVersion>4.0.7.RELEASE</springVersion>
+        <springWebflowVersion>2.4.1.RELEASE</springWebflowVersion>
+        <systemRulesVersion>1.5.0</systemRulesVersion>
+        <thymeleafVersion>2.1.3.RELEASE</thymeleafVersion>
+        <tilesVersion>3.0.1</tilesVersion>
+    </properties>
+
+    <modules>
+        <module>Chapter1/knight</module>
+    </modules>
+
+    <dependencyManagement>
+
+    </dependencyManagement>
+
+
+
+
+
+</project>
