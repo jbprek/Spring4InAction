@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.StandardOutputStreamLog;
+import org.junit.contrib.java.lang.system.SystemOutRule;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -15,7 +16,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 public class PNamespaceWithUtilNamespaceTest {
 
   @Rule
-  public final StandardOutputStreamLog log = new StandardOutputStreamLog();
+  public final SystemOutRule log = new SystemOutRule().enableLog();
 
   @Autowired
   private MediaPlayer player;
@@ -24,7 +25,7 @@ public class PNamespaceWithUtilNamespaceTest {
   public void play() {
     player.play();
     assertEquals(
-        "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles" +
+        "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n" +
         "-Track: Sgt. Pepper's Lonely Hearts Club Band\n" +
         "-Track: With a Little Help from My Friends\n" +
         "-Track: Lucy in the Sky with Diamonds\n" +
@@ -38,7 +39,7 @@ public class PNamespaceWithUtilNamespaceTest {
         "-Track: Good Morning Good Morning\n" +
         "-Track: Sgt. Pepper's Lonely Hearts Club Band (Reprise)\n" +
         "-Track: A Day in the Life\n",
-        log.getLog());
+        log.getLogWithNormalizedLineSeparator());
   }
 
 }
